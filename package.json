@@ -1,0 +1,18 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "npm run build:client && npm run build:server",
+      "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
+      "start:client": "cd client && npm run dev",
+      "start:server": "cd server && npm start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "concurrently": "^8.0.1"
+    }
+  }
